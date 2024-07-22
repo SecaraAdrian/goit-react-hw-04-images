@@ -1,10 +1,13 @@
+import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App'; 
+import App from './App';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename="/goit-react-hw-04-images">
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
